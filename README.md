@@ -1,4 +1,4 @@
 # JonathanBodner.github.io
 My personal portfolio site.
-JonathanBodner.github.io
+[Click to view site](JonathanBodner.github.io)
 
