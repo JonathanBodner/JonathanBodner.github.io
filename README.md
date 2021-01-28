@@ -1,2 +1,4 @@
 # JonathanBodner.github.io
-Personal Portfolio Site
+My personal portfolio site.
+JonathanBodner.github.io
+
