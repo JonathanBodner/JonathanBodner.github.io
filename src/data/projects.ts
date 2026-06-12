@@ -37,7 +37,7 @@ export const projects: Project[] = [
   {
     title: 'FPGA Matrix Multiplication',
     description:
-      'A Verilog systolic array that performs matrix multiplication, deployed on an FPGA board. A hardware-level exploration of parallel compute architectures.',
+      'A systolic-array matrix multiplier written in Verilog and deployed on an FPGA board using Quartus.',
     image: '',
     tags: ['Verilog', 'FPGA', 'Quartus', 'Hardware'],
     links: [],
@@ -45,7 +45,7 @@ export const projects: Project[] = [
   {
     title: 'Camera Slider',
     description:
-      'Arduino-controlled camera rig using a stepper motor and two servo motors for motorized pan, slide, and tilt — built for smooth cinematic shots.',
+      'Arduino-controlled camera rig using a stepper motor and two servos for motorized pan, slide, and tilt.',
     image: '',
     tags: ['Arduino', 'C++', 'Hardware'],
     links: [],
@@ -53,7 +53,7 @@ export const projects: Project[] = [
   {
     title: 'Obstacle Avoidance Robot',
     description:
-      'Autonomous rover that uses ultrasonic sensors and an Arduino to detect and navigate around obstacles in real time.',
+      'Autonomous rover that navigates around obstacles using ultrasonic sensors and an Arduino.',
     image: '',
     tags: ['Arduino', 'C++', 'Embedded', 'Robotics'],
     links: [],
@@ -93,7 +93,7 @@ export const experience: Role[] = [
     company: 'Extentcom',
     period: '2024 – Present',
     description:
-      'Building cutting-edge wireless systems for industrial, government, and defense customers — proprietary waveforms and protocols that go well beyond what standard Wi-Fi or cellular can offer. Work spans embedded C on custom ARM hardware and FPGA development.',
+      'Developing cutting-edge wireless systems for industrial, government, and defense customers — custom waveforms and protocols for situations where standard Wi-Fi or cellular won\'t do. Day to day this means embedded C on custom ARM hardware and FPGA work in Vivado and ModelSim.',
     current: true,
   },
   {
@@ -101,21 +101,21 @@ export const experience: Role[] = [
     company: 'PointClickCare',
     period: 'Co-op · Jan – Apr 2023',
     description:
-      'Part of a team working on patient scheduling and medication/pharmacy tracking. Led a React rewrite of an internal simulation tool and enhanced Java backend services to improve data accuracy.',
+      'Worked on patient scheduling and medication/pharmacy tracking in Java and React. Led a React rewrite of an internal message simulation tool that ended up being considered for customer-facing use.',
   },
   {
     title: 'Full Stack Developer',
     company: 'Empire Life',
     period: 'Co-op · Jan – Apr 2022',
     description:
-      'Worked on auth and user management: implemented tenant-wide MFA (biometric + SMS) and modernized the authentication pipeline using Auth0. Also upgraded a Dockerized React/Redux/Django internal management app.',
+      'Auth and user management on the IAM team: rolled out tenant-wide biometric and SMS-based MFA with Auth0, and upgraded a Dockerized React/Redux/Django app used internally for advisor onboarding.',
   },
   {
     title: 'Software Developer & IT Technician',
     company: 'Terrestrial Energy',
     period: 'Co-op · 2020',
     description:
-      'Developed Windchill workflows in Java to automate PLM processes — improving data accuracy in SQL and cutting time spent on manual tasks. Also supported CAD and document version control.',
+      'Automated product lifecycle management processes by writing Windchill workflows in Java, and supported CAD tooling and document version control.',
   },
 ];
 
