@@ -53,26 +53,29 @@ export const experience: Role[] = [
     company: 'Extentcom',
     period: '2024 – Present',
     description:
-      'Embedded software and FPGA development for telecommunications systems.',
+      'Building cutting-edge wireless systems for industrial, government, and defense customers — proprietary waveforms and protocols that go well beyond what standard Wi-Fi or cellular can offer. Work spans embedded C on custom ARM hardware and FPGA development.',
     current: true,
   },
   {
     title: 'Software Developer',
     company: 'PointClickCare',
-    period: 'Co-op',
-    description: 'Software development for cloud-based healthcare software solutions.',
+    period: 'Co-op · Jan – Apr 2023',
+    description:
+      'Part of a team working on patient scheduling and medication/pharmacy tracking. Led a React rewrite of an internal simulation tool and enhanced Java backend services to improve data accuracy.',
   },
   {
     title: 'Full Stack Developer',
     company: 'Empire Life',
-    period: 'Co-op',
-    description: 'Full-stack development of financial and insurance software.',
+    period: 'Co-op · Jan – Apr 2022',
+    description:
+      'Worked on auth and user management: implemented tenant-wide MFA (biometric + SMS) and modernized the authentication pipeline using Auth0. Also upgraded a Dockerized React/Redux/Django internal management app.',
   },
   {
     title: 'Software Developer & IT Technician',
     company: 'Terrestrial Energy',
-    period: 'Co-op',
-    description: 'Software development, IT support, and work on PLM systems, CAD tooling, and document version control workflows.',
+    period: 'Co-op · 2020',
+    description:
+      'Developed Windchill workflows in Java to automate PLM processes — improving data accuracy in SQL and cutting time spent on manual tasks. Also supported CAD and document version control.',
   },
 ];
 
