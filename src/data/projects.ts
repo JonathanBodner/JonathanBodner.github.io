@@ -122,7 +122,7 @@ export const experience: Role[] = [
 export const skillGroups: { name: string; skills: string[] }[] = [
   {
     name: 'Languages',
-    skills: ['C / C++', 'Python', 'Java', 'JavaScript / TypeScript', 'VHDL / Verilog', 'SQL'],
+    skills: ['C / C++', 'Python', 'Java', 'JavaScript / TypeScript', 'VHDL / Verilog', 'Tcl', 'MATLAB', 'SQL'],
   },
   {
     name: 'Embedded & FPGA',
