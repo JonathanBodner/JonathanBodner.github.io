@@ -45,8 +45,8 @@ export const skillGroups: { name: string; skills: string[] }[] = [
     skills: ['C / C++', 'Python', 'Java', 'JavaScript / TypeScript', 'VHDL / Verilog', 'SQL'],
   },
   {
-    name: 'Embedded & Hardware',
-    skills: ['Microcontrollers', 'Real-time operating systems', 'Circuit design', 'IoT', 'Computer architecture'],
+    name: 'Embedded & FPGA',
+    skills: ['FPGA development', 'RTL design (VHDL / Verilog)', 'Firmware', 'Microcontrollers', 'Real-time operating systems', 'Circuit design', 'IoT', 'Computer architecture'],
   },
   {
     name: 'Software & Web',

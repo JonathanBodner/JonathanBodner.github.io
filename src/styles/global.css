@@ -1,13 +1,13 @@
 :root {
-  --bg: #0b0f1a;
-  --bg-raised: #121829;
-  --bg-card: #141b2e;
-  --border: #232c45;
-  --text: #e6e9f2;
-  --text-muted: #9aa3bd;
-  --accent: #8b7cf7;
-  --accent-2: #4cc9f0;
-  --nebula: linear-gradient(100deg, #8b7cf7, #c77dff 45%, #4cc9f0);
+  --bg: #120e0b;
+  --bg-raised: #1d1712;
+  --bg-card: #201913;
+  --border: #3a2e22;
+  --text: #f2ece4;
+  --text-muted: #b3a795;
+  --accent: #f59e54;
+  --accent-2: #8fd694;
+  --nebula: linear-gradient(100deg, #f59e54, #e8c468 45%, #8fd694);
   --radius: 12px;
   --max-width: 1060px;
 }
@@ -100,13 +100,13 @@ section {
   text-decoration: none;
   border-color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(139, 124, 247, 0.25);
+  box-shadow: 0 6px 24px rgba(245, 158, 84, 0.25);
 }
 
 .button.primary {
   background: var(--nebula);
   border: none;
-  color: #0b0f1a;
+  color: #1c130a;
 }
 
 @media (prefers-reduced-motion: reduce) {
