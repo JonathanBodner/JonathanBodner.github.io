@@ -1,0 +1,120 @@
+:root {
+  --bg: #0b0f1a;
+  --bg-raised: #121829;
+  --bg-card: #141b2e;
+  --border: #232c45;
+  --text: #e6e9f2;
+  --text-muted: #9aa3bd;
+  --accent: #8b7cf7;
+  --accent-2: #4cc9f0;
+  --nebula: linear-gradient(100deg, #8b7cf7, #c77dff 45%, #4cc9f0);
+  --radius: 12px;
+  --max-width: 1060px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  line-height: 1.2;
+  margin: 0 0 0.6em;
+}
+
+p {
+  margin: 0 0 1em;
+  color: var(--text-muted);
+}
+
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 4.5rem 0;
+}
+
+.section-title {
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+.section-title::before {
+  content: '// ';
+  background: var(--nebula);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text {
+  background: var(--nebula);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  color: var(--text);
+  font-weight: 600;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(139, 124, 247, 0.25);
+}
+
+.button.primary {
+  background: var(--nebula);
+  border: none;
+  color: #0b0f1a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

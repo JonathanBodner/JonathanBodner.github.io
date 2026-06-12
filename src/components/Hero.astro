@@ -1,0 +1,77 @@
+---
+import Starfield from './Starfield.astro';
+---
+
+<header class="hero">
+  <Starfield />
+  <div class="container hero-inner">
+    <img class="avatar" src="/images/avatar.jpg" alt="Jonathan Bodner" width="140" height="140" />
+    <h1>
+      Hi, I'm <span class="gradient-text">Jonathan Bodner</span>
+    </h1>
+    <p class="tagline">
+      Software developer &amp; Computer Engineering grad from the University of Waterloo.
+      I build software, embedded systems, and the desk setups they live on.
+    </p>
+    <div class="actions">
+      <a class="button primary" href="#projects">See my work</a>
+      <a class="button" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <a class="scroll-hint" href="#about" aria-label="Scroll to about section">&#8595;</a>
+</header>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(ellipse at 50% -20%, #1a2240 0%, var(--bg) 65%);
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-inner {
+    position: relative;
+    padding: 5rem 1.5rem;
+  }
+  .avatar {
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    border: 3px solid var(--border);
+    box-shadow: 0 0 40px rgba(139, 124, 247, 0.35);
+    object-fit: cover;
+  }
+  h1 {
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+  }
+  .tagline {
+    max-width: 38rem;
+    margin: 0 auto 2rem;
+    font-size: 1.2rem;
+  }
+  .actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .scroll-hint {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    animation: bob 2s ease-in-out infinite;
+  }
+  .scroll-hint:hover {
+    text-decoration: none;
+    color: var(--text);
+  }
+  @keyframes bob {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, 8px); }
+  }
+</style>

@@ -1,0 +1,63 @@
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <div>
+        <p>
+          I'm a software developer with a BASc in Computer Engineering (with distinction, April 2024)
+          from the University of Waterloo. I love working across the whole stack — from full-stack web
+          development down to embedded systems, IoT devices, and the hardware they run on.
+        </p>
+        <p>
+          I'm currently building toward a YouTube channel where I'll document my coding projects,
+          embedded systems design, and desk setup builds — follow along here as that takes shape.
+          When I'm not at a keyboard you'll find me into sports, fitness, reading, and anything to do
+          with space exploration.
+        </p>
+        <a class="button" href="/Resume_Jonathan.pdf">Download my resume</a>
+      </div>
+      <aside class="facts">
+        <h3>Quick facts</h3>
+        <ul>
+          <li>🎓 BASc Computer Engineering, UWaterloo '24</li>
+          <li>🛠️ Embedded systems &amp; full-stack dev</li>
+          <li>🖥️ Desk setup &amp; workspace design enthusiast</li>
+          <li>📹 YouTube channel — coming soon</li>
+          <li>🚀 Space exploration nerd</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .facts {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .facts h3 {
+    font-size: 1.1rem;
+  }
+  .facts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--text-muted);
+  }
+  .facts li {
+    padding: 0.35rem 0;
+  }
+  @media (max-width: 760px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

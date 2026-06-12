@@ -1,0 +1,95 @@
+---
+import { projects } from '../data/projects';
+---
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+      {projects.map((p) => (
+        <article class="card">
+          <img src={p.image} alt={p.title} loading="lazy" />
+          <div class="card-body">
+            <h3>{p.title}</h3>
+            <ul class="tags">
+              {p.tags.map((t) => <li>{t}</li>)}
+            </ul>
+            <p>{p.description}</p>
+            <div class="links">
+              {p.links.map((l) => (
+                <a class="button" href={l.url} target={l.url.startsWith('/') ? undefined : '_blank'} rel="noopener">
+                  {l.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(139, 124, 247, 0.15);
+  }
+  .card img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    width: 100%;
+  }
+  .card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .card-body h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+  }
+  .card-body p {
+    font-size: 0.95rem;
+    flex: 1;
+  }
+  .tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+    margin: 0 0 0.8rem;
+  }
+  .tags li {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--accent-2);
+  }
+  .links {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  .links .button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+</style>
