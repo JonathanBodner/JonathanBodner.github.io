@@ -39,6 +39,43 @@ export const projects: Project[] = [
   },
 ];
 
+export interface Role {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  current?: boolean;
+}
+
+export const experience: Role[] = [
+  {
+    title: 'FPGA and Software Developer',
+    company: 'Extentcom',
+    period: '2024 – Present',
+    description:
+      'Embedded software and FPGA development for telecommunications systems — writing firmware and digital logic where software meets hardware.',
+    current: true,
+  },
+  {
+    title: 'Software Developer',
+    company: 'PointClickCare',
+    period: 'Co-op',
+    description: 'Software development for cloud-based healthcare software solutions.',
+  },
+  {
+    title: 'Full Stack Developer',
+    company: 'Empire Life',
+    period: 'Co-op',
+    description: 'Full-stack development of financial and insurance software.',
+  },
+  {
+    title: 'Software Developer & IT Technician',
+    company: 'Terrestrial Energy',
+    period: 'Co-op',
+    description: 'Software development and IT support in the nuclear energy industry.',
+  },
+];
+
 export const skillGroups: { name: string; skills: string[] }[] = [
   {
     name: 'Languages',
