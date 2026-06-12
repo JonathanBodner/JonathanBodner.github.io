@@ -53,7 +53,7 @@ export const experience: Role[] = [
     company: 'Extentcom',
     period: '2024 – Present',
     description:
-      'Embedded software and FPGA development for telecommunications systems — writing firmware and digital logic where software meets hardware.',
+      'Embedded software and FPGA development for telecommunications systems.',
     current: true,
   },
   {
@@ -72,7 +72,7 @@ export const experience: Role[] = [
     title: 'Software Developer & IT Technician',
     company: 'Terrestrial Energy',
     period: 'Co-op',
-    description: 'Software development and IT support in the nuclear energy industry.',
+    description: 'Software development, IT support, and work on PLM systems, CAD tooling, and document version control workflows.',
   },
 ];
 
