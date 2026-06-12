@@ -39,7 +39,7 @@ export const projects: Project[] = [
     description:
       'A Verilog systolic array that performs matrix multiplication, deployed on an FPGA board. A hardware-level exploration of parallel compute architectures.',
     image: '',
-    tags: ['Verilog', 'FPGA', 'Hardware'],
+    tags: ['Verilog', 'FPGA', 'Quartus', 'Hardware'],
     links: [],
   },
   {
@@ -126,7 +126,7 @@ export const skillGroups: { name: string; skills: string[] }[] = [
   },
   {
     name: 'Embedded & FPGA',
-    skills: ['FPGA development', 'RTL design (VHDL / Verilog)', 'Firmware', 'Microcontrollers', 'RTOS', 'ESP32 / Arduino', 'Home Assistant', 'Circuit design', 'IoT', 'Computer architecture'],
+    skills: ['FPGA development', 'RTL design (VHDL / Verilog)', 'Vivado', 'ModelSim', 'Quartus', 'Firmware', 'Microcontrollers', 'RTOS', 'ESP32 / Arduino', 'Home Assistant', 'Circuit design', 'IoT', 'Computer architecture'],
   },
   {
     name: 'Software & Web',
