@@ -27,6 +27,46 @@ export const projects: Project[] = [
     links: [{ label: 'GitHub', url: 'https://github.com/JonathanBodner/AlgorithmVisualizer' }],
   },
   {
+    title: 'Real-Time Operating System',
+    description:
+      'A C-based RTOS running on a microcontroller with memory management, inter-task communication, console I/O, and a real-time scheduler.',
+    image: '',
+    tags: ['C', 'Embedded', 'RTOS', 'Microcontroller'],
+    links: [],
+  },
+  {
+    title: 'FPGA Matrix Multiplication',
+    description:
+      'A Verilog systolic array that performs matrix multiplication, deployed on an FPGA board. A hardware-level exploration of parallel compute architectures.',
+    image: '',
+    tags: ['Verilog', 'FPGA', 'Hardware'],
+    links: [],
+  },
+  {
+    title: 'Camera Slider',
+    description:
+      'Arduino-controlled camera rig using a stepper motor and two servo motors for motorized pan, slide, and tilt — built for smooth cinematic shots.',
+    image: '',
+    tags: ['Arduino', 'C++', 'Hardware'],
+    links: [],
+  },
+  {
+    title: 'Obstacle Avoidance Robot',
+    description:
+      'Autonomous rover that uses ultrasonic sensors and an Arduino to detect and navigate around obstacles in real time.',
+    image: '',
+    tags: ['Arduino', 'C++', 'Embedded', 'Robotics'],
+    links: [],
+  },
+  {
+    title: 'Path Visualizer',
+    description:
+      'Applies a modified greedy algorithm to input elevation data in Java to determine an optimal traversal path across terrain.',
+    image: '',
+    tags: ['Java', 'Algorithms'],
+    links: [],
+  },
+  {
     title: 'Rock Paper Scissors',
     description:
       'A responsive browser game built with HTML, CSS, JavaScript, and Bootstrap — one of my first fully deployed web projects, hosted on Netlify.',
@@ -86,7 +126,7 @@ export const skillGroups: { name: string; skills: string[] }[] = [
   },
   {
     name: 'Embedded & FPGA',
-    skills: ['FPGA development', 'RTL design (VHDL / Verilog)', 'Firmware', 'Microcontrollers', 'Real-time operating systems', 'Circuit design', 'IoT', 'Computer architecture'],
+    skills: ['FPGA development', 'RTL design (VHDL / Verilog)', 'Firmware', 'Microcontrollers', 'RTOS', 'ESP32 / Arduino', 'Home Assistant', 'Circuit design', 'IoT', 'Computer architecture'],
   },
   {
     name: 'Software & Web',
