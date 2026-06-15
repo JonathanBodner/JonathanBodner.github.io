@@ -1,0 +1,85 @@
+---
+import { courseGroups } from '../data/projects';
+---
+
+<section id="courses">
+  <div class="container">
+    <details open>
+      <summary>
+        <h2 class="section-title">Coursework</h2>
+        <span class="hint">BASc Computer Engineering · University of Waterloo</span>
+      </summary>
+      <div class="groups">
+        {courseGroups.map((g) => (
+          <div class="group">
+            <h3>{g.name}</h3>
+            <ul>
+              {g.courses.map((c) => <li>{c}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </details>
+  </div>
+</section>
+
+<style>
+  details > summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary .section-title {
+    margin-bottom: 0;
+  }
+  summary::after {
+    content: '▾';
+    margin-left: auto;
+    color: var(--text-muted);
+    transition: transform 0.2s;
+  }
+  details[open] summary::after {
+    transform: rotate(180deg);
+  }
+  .hint {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+  .groups {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+  }
+  .group {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+  }
+  .group h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.8rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    padding: 0.3rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+</style>

@@ -137,3 +137,65 @@ export const skillGroups: { name: string; skills: string[] }[] = [
     skills: ['Git / GitHub', 'Linux', 'Networking', 'Performance analysis'],
   },
 ];
+
+export const courseGroups: { name: string; courses: string[] }[] = [
+  {
+    name: 'Software & Computer Concepts',
+    courses: [
+      'Programming for Performance',
+      'Machine Learning',
+      'Distributed Systems',
+      'IoT Signal Processing',
+      'Co-operative and Adaptive Algorithms',
+      'Compilers',
+      'Database Systems',
+      'Computer Networks',
+      'Real-Time Operating Systems',
+      'Digital Hardware Systems',
+      'Analog Control Systems',
+      'Communication Systems',
+      'Embedded Microprocessor Systems',
+      'Systems Programming and Concurrency',
+      'Algorithms and Data Structures',
+      'Digital Computers',
+      'Instrumentation and Prototyping',
+    ],
+  },
+  {
+    name: 'Mathematics',
+    courses: [
+      'Calculus I & II',
+      'Linear Algebra',
+      'Numerical Methods',
+      'Probability Theory and Statistics I & II',
+      'Discrete Mathematics and Logic I & II',
+      'Differential Equations',
+      'Signals and Systems',
+    ],
+  },
+  {
+    name: 'Sciences',
+    courses: [
+      'Mechanics',
+      'Materials Chemistry',
+      'Electricity and Magnetism',
+      'Circuits I & II',
+      'Astronomy',
+      'Psychology',
+      'Cognitive Processes',
+      'Quantum Mechanics',
+    ],
+  },
+  {
+    name: 'Business & Professional',
+    courses: [
+      'Entrepreneurial Strategy',
+      'Engineering Economics',
+      'Professional Responsibility in Computing',
+      'Project Management',
+      'Professionalism and Ethics in Engineering',
+      'Communication in the Engineering Profession',
+      'Developing Effective Plans',
+    ],
+  },
+];
